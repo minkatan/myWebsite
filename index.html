@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minka's Page</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body class="text-gray-700 dark:text-gray-100 bg-stone-50 dark:bg-gradient-to-r dark:from-gray-800 dark:to-stone-800">
+
+<!-- this is navbar -->
+<header class="relative z-10 dark:bg-gradient-to-r dark:from-slate-900 dark:to-stone-900 bg-gradient-to-r to-cyan-50 from-blue-50 lg:px-12 md:px-4 py-4 w-full">
+<div class="flex justify-between">
+  <div id="menu" class="flex flex-row items-center gap-x-2 pl-3">
+    <i class="md:hidden mr-8" data-feather="menu"></i>
+    <a href="./index.html" class="text-6xl font-bold">MinKa</a>
+  </div>
+  <div class="md:flex hidden md:px-4 md:space-x-4 items-center cursor-pointer mr-8">
+    <a href="./src/html/projects.html" class="p-2">Projects</a>
+    <a href="./src/html/resume.html" class="flex flex-row gap-x-2 items-center">
+      Resume 
+      <span class="animate-bounce text-sky-900 dark:text-sky-200 flex flex-row">
+        <i id='right' data-feather="arrow-right" ></i>  
+        <i id='right' data-feather="arrow-right" ></i>    
+      </span>
+    </a>
+    <a href="./src/assets/pdf/Resume_Min_Ka.pdf" download class="bg-cyan-600 hover:bg-cyan-300 text-gray-50 p-2 rounded" >Resume Download</a>
+  </div>
+</div>
+<div id="switcher">
+  <i id='light' data-feather="sun" class="absolute top-8 right-6"></i>
+  <i id='dark' data-feather="moon" class="absolute top-8 right-6"></i>
+</div>
+</header>
+
+<main class="">
+  <!-- mobile nav-bar -->
+  <div id="mobile-navbar" class="hidden fixed z-10 inset-y-24 overflow-y-auto bg-opacity-60 flex flex-col items-center justify-start gap-y-8 py-12 cursor-pointer dark:bg-gradient-to-r dark:from-slate-900 dark:to-stone-900 bg-gradient-to-r to-cyan-50 from-blue-50 w-full h-screen text-3xl font-semibold pt-24">
+    <a href="#" class="hover:bg-yellow-500 dark:hover:bg-yellow-300 hover:rounded-xl p-2 hover:text-white hover:opacity-60 hover:dark:opacity-100">Projects</a>
+    <a href="./src/html/resume.html" class="hover:bg-yellow-500 dark:hover:bg-yellow-300 hover:rounded-xl p-2 hover:text-white hover:opacity-60 hover:dark:opacity-100">
+      Resume 
+    </a>
+  </div>
+
+  <!-- this is hero section -->
+
+    <div class="lg:grid lg:grid-cols-12 lg:gap-x-12"> <!---update gap between about me-->
+      <div class="lg:col-span-5 sm:text-center md:text-left lg:mb-16 md:mb-10 lg:pt-16 lg:pb-14 lg:px-6 mt-10 mx-auto px-4 sm:mt-12 sm:px-6 md:mt-12 lg:mt-16 xl:mt-24">
+        <div class="text-4xl tracking-tight font-semibold text-gray-800 dark:text-gray-100 sm:text-5xl md:text-6xl">
+          <p class="flex flex-row items-center">Hey There! <i class="fill-amber-500 text-amber-500" data-feather="zap"></i></p>
+          <p class="my-4">I am
+          <span class="lg:w-1/4 text-center font-bold bg-teal-100 text-emerald-800 dark:bg-teal-200 dark:text-emerald-700 p-2 rounded-xl">Min Ka</span>
+          </p>
+        </div>
+        <p id="typing" class="mt-3 text-2xl sm:mt-5 sm:max-w-xl sm:mx-auto md:mt-5 md:text-4xl font-semibold lg:mx-0 tracking-wider">
+        </p>
+        <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+          <div class="rounded-md shadow">
+            <a href="#contact" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md bg-cyan-500 dark:bg-cyan-900 md:py-4 md:text-lg md:px-8"> Contact Me </a>
+          </div>
+          <div class="mt-3 sm:mt-0 sm:ml-3">
+            <a href="#about-me" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-cyan-700 bg-cyan-100 dark:bg-emerald-800 dark:text-cyan-100 md:py-4 md:text-lg md:px-8"> Learn More </a>
+          </div>
+        </div>
+      </div>
+
+    <!-- IMAGE!!!! -->
+    <div class="lg:col-span-7">
+      <a href="https://unsplash.com/photos/wgivdx9dBdQ" target="_blank">
+        <img class="hidden md:flex w-full object-cover md:h-96 lg:h-[48rem]" src="./src/assets/images/background-image-2.jpeg" alt="hero">
+      </a>
+    </div>
+  </div>
+
+      
+<!-- This about me section -->
+<div id="about-me" class="py-12 mt-20">
+  <div class="px-4 sm:px-6 lg:px-8">
+    <div class="lg:text-center">
+      <h2 class="text-base text-cyan-600 font-semibold tracking-wide uppercase">About Me</h2>
+      <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl">Working Experience</p>
+      <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">Been with food manufacturing industry for 8 years. Enjoyed multiple opportunities working in different teams and departments. Developed strong working relationship with people from different background and cultures.</p>
+    </div>
+
+    <div class="mt-10">
+      <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+        <div class="relative hover:bg-stone-100 hover:text-gray-500 cursor-pointer transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-105 hover:dark:bg-black rounded md:p-4 hover:md:p-4 p-1 hover:p-2 duration-300">
+          <dt>
+            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-cyan-500 text-white">
+              <i data-feather="users"></i>
+            </div>
+            <p class="ml-16 text-lg leading-6 font-medium">Project Management</p>
+          </dt>
+          <dd class="mt-2 ml-16 text-base text-gray-500">Do-er. Organized and getting things done. Prefer overcommunicate to ensure all stakeholders are on the same page. Had 1 year of experience in opening and managing a restaurant & 3 years in SAP projects.</dd>
+        </div>
+
+        <div class="relative hover:bg-stone-100 hover:text-gray-500 cursor-pointer transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-105 hover:dark:bg-black rounded md:p-4 hover:md:p-4 p-1 hover:p-2 duration-300"">
+          <dt>
+            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-cyan-500 text-white">
+              <i data-feather="columns"></i>
+            </div>
+            <p class="ml-16 text-lg leading-6 font-medium">Financial Analyst</p>
+          </dt>
+          <dd class="mt-2 ml-16 text-base text-gray-500">Graduated & starterd first job in finance department. Comfortable and exeprience working on large dataset. Love building templates to ease the workload of team members.</dd>
+        </div>
+
+        <div class="relative hover:bg-stone-100 hover:text-gray-500 cursor-pointer transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-105 hover:dark:bg-black rounded md:p-4 hover:md:p-4 p-1 hover:p-2 duration-300"">
+          <dt>
+            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-cyan-500 text-white">
+              <i data-feather="database"></i>
+            </div>
+            <p class="ml-16 text-lg leading-6 font-medium">Data Analyst</p>
+          </dt>
+          <dd class="mt-2 ml-16 text-base text-gray-500">Data Nerd. Experience in analyzing & cleansing different type of data. Love to spend time on sports relevant dataset espeically NBA data. Proficient in Excel, SQL and Power BI</dd>
+        </div>
+
+        <div class="relative hover:bg-stone-100 hover:text-gray-500 cursor-pointer transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-105 hover:dark:bg-black rounded md:p-4 hover:md:p-4 p-1 hover:p-2 duration-300"">
+          <dt>
+            <div class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-cyan-500 text-white">
+              <i data-feather="command"></i>
+            </div>
+            <p class="ml-16 text-lg leading-6 font-medium">Front-End Developer</p>
+          </dt>
+          <dd class="mt-2 ml-16 text-base text-gray-500">Self-taught. Proficient in HTML, CSS, Vanilla JS, Tailwind CSS, React. Check out my <a href="./src/html/projects.html" target="_blank" class="underline text-blue-700">projects</a> to see what I've builtd so far</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</div>
+
+<!-- this is contact me section -->
+<div id="contact" class="mt-10 mx-auto max-w-7xl sm:mt-12 md:mt-16 lg:mt-20 xl:mt-28 md:px-8 lg:pl-16 lg:pr-4">
+    <div class="md:grid md:grid-cols-2 flex flex-col h-full bg-cyan-100 dark:bg-cyan-900 sm:text-center lg:text-left lg:my-12 my-4 lg:py-12 py-4 lg:px-4 px-2 rounded-2xl">
+      <div class="lg:pl-16 md:pl-12 pl-8 md:py-8 pb-4 md:text-left gap-y-6 flex flex-col">
+        <h2 class="text-cyan-600 font-semibold tracking-wide uppercase mt-6 md:mt-0">Contact Information</h2>
+        <div class="flex flex-row items-center gap-x-2 lg:text-7xl md:text-5xl text-2xl font-bold">
+          Let's Talk! 
+          <i class="fill-amber-500 text-amber-500" data-feather="zap"></i>
+        </div>
+        <a href="https://goo.gl/maps/HKY7byqSwpSEHoMu7" target="_blank" class="flex flex-row gap-x-2 w-auto"><i data-feather="map-pin"></i>Toronto, Canada</a>
+        <a href="tel:+1-416-830-5822" class="flex flex-row gap-x-2 w-auto"><i data-feather="phone"></i>+1 (416) 830-5822</a>
+        <a href="mailto:minka.tan@outlook.com" class="flex flex-row gap-x-2 w-auto"><i data-feather="mail"></i>minka.tan@outlook.com</a>
+        <div class="flex flex-row gap-x-8 mt-4">
+          <a href="https://www.linkedin.com/in/minkatan/" target="_blank" class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:dark:bg-black hover:bg-stone-50 rounded-full md:p-4 p-1 duration-300">
+            <i data-feather="linkedin"></i>
+          </a>
+          <a href="https://twitter.com/tan_minka" target="_blank" class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:dark:bg-black hover:bg-stone-50 rounded-full md:p-4 p-1 duration-300" >
+            <i data-feather="twitter"></i>
+          </a>
+          <a href="https://github.com/minkatan" target="_blank" class="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:dark:bg-black hover:bg-stone-50 rounded-full md:p-4 p-1 duration-300"> 
+            <i data-feather="github"></i>
+          </a>
+        </div>
+        </div>
+
+      <div class='lg:px-8 md:px-4 lg:pt-20 md:py-4 md:text-left gap-y-4 flex flex-col md:h-full '>
+      <div class="md:px-4 px-2 py-4 md:mb-8">
+        <form 
+          action="https://formsubmit.co/minka.tan@outlook.com" 
+          method='POST' 
+          class="flex flex-col text-left gap-y-4">
+          <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+            <div class="flex flex-col focus:outline-none">
+              <label for="name">Name</label>
+              <input 
+                id="name" 
+                name="name" 
+                type="text" 
+                class="md:p-2 dark:bg-sky-800" 
+                placeholder="asdf"
+                required 
+                 />
+            </div>
+            <div class="flex flex-col focus:outline-none">
+              <label for="Email">Email</label>
+              <input 
+                id="email" 
+                email="email" 
+                type="email" 
+                class="md:p-2 dark:bg-sky-800" 
+                placeholder="your.email@address.com" 
+                required 
+                />
+            </div>
+            <div class="col-span-2 flex flex-col focus:outline-none">
+              <label for="subject">Subject</label>
+              <input 
+                id="subject" 
+                name="subject" 
+                type="text" 
+                class="md:p-2 dark:bg-sky-800" 
+                placeholder="asdf"
+                />
+            <div class="col-span-2 flex flex-col focus:outline-none mt-4">
+              <label for="Message">Message</label>
+              <textarea 
+                name="message" 
+                id="message" 
+                cols="40" 
+                rows="6" 
+                class="md:p-2 dark:bg-sky-800" 
+                required></textarea>
+            </div>
+            <button 
+              id="send-message" 
+              type="submit" 
+              class="my-4 p-2 bg-cyan-600 rounded text-center text-white cursor-pointer"
+              >
+              Send email
+            </button>
+        </form>
+      </div>
+    </div>
+    
+  </div>
+</div>
+</main>
+<footer class="relative z-10 dark:bg-gradient-to-r dark:from-slate-900 dark:to-stone-900 bg-gradient-to-r to-cyan-50 from-blue-50 px-8 pb-6 pt-12 w-full text-center">Page built with Tailwind CSS and Vanilla Javascript</footer>
+<script>
+  feather.replace()
+</script>
+<script src="./src/js/typing.js"></script>
+<script src="./src/js/darkMode.js"></script>
+<script src="./src/js/index.js"></script>
+</body>
+</html>

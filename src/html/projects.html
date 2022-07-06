@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body class="text-gray-700 dark:text-gray-100 dark:bg-gradient-to-r dark:from-slate-900 dark:to-stone-900 bg-gradient-to-r to-cyan-50 from-blue-50 h-screen">
+        <div class="flex">
+            <div class="pl-3 mt-4">
+                <a href="../../index.html" class="text-6xl font-bold">Projects</a>
+            </div>
+            <div id="switcher">
+                <i id='light' data-feather="sun" class="absolute top-8 right-6"></i>
+                <i id='dark' data-feather="moon" class="absolute top-8 right-6"></i>
+            </div>
+        </div>
+        <!-- canvas -->
+        <canvas class="fixed z-[2] pointer-events-none"></canvas>
+
+        <!-- projects -->
+        <div id="project" class="relative py-12 px-6 h-full w-full">
+            <div class="w-full h-full">
+            <ul class="flex flex-col justify-evenly w-full h-full text-4xl">
+                <li class="relative border-b-2 dark:border-b-cyan-300 dark:text-cyan-300 border-solid">
+                    <a href="https://marketplace-lyart-three.vercel.app/" class="">Housing Marketplace</a>
+                </li>
+                <li class="relative border-b-2 dark:border-b-cyan-300 dark:text-cyan-300 border-solid">
+                    <a href="" class="">Space Invader with Javascript</a>
+                </li>
+                <li class="relative border-b-2 dark:border-b-cyan-300 dark:text-cyan-300 border-solid">
+                    <a href="" class="">Defect Management Tool</a>
+                </li>
+                <li class="relative border-b-2 dark:border-b-cyan-300 dark:text-cyan-300 border-solid">
+                    <a href="https://minhaejua-cryoto.netlify.app/" class="">New Collection</a>
+                </li>
+                <li class="relative border-b-2 dark:border-b-cyan-300 dark:text-cyan-300 border-solid">
+                    <a href="" class="">Expense Tracker</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+      <script>
+        feather.replace()
+      </script>
+      <script src="../js/darkMode.js"></script>
+      <script src="../js/project.js"></script>
+
+</body>
+</html>
