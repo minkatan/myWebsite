@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minka's Page</title>
     <link rel="stylesheet" href="./src/css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 </head>
 <body class="text-gray-700 dark:text-gray-100 bg-stone-50 dark:bg-gradient-to-r dark:from-gray-800 dark:to-stone-800">
@@ -21,12 +25,14 @@
     <a href="./src/html/projects.html" class="p-2">Projects</a>
     <a href="./src/html/resume.html" class="flex flex-row gap-x-2 items-center">
       Resume 
-      <span class="animate-bounce text-sky-900 dark:text-sky-200 flex flex-row">
+      <span class="animate__animated animate__bounceInLeft text-sky-900 dark:text-sky-200 flex flex-row">
         <i id='right' data-feather="arrow-right" ></i>  
         <i id='right' data-feather="arrow-right" ></i>    
       </span>
     </a>
-    <a href="./src/assets/pdf/Resume_Min_Ka.pdf" download class="bg-cyan-600 hover:bg-cyan-300 text-gray-50 p-2 rounded" >Resume Download</a>
+    <div class="animate-bounce">
+      <a href="./src/assets/pdf/Resume_Min_Ka.pdf" download class="bg-cyan-600 hover:bg-cyan-300 text-gray-50 p-2 rounded" >Resume Download</a>
+    </div>
   </div>
 </div>
 <div id="switcher">
@@ -131,9 +137,9 @@
 </div>
 
 <!-- this is contact me section -->
-<div id="contact" class="mt-10 mx-auto max-w-7xl sm:mt-12 md:mt-16 lg:mt-20 xl:mt-28 md:px-8 lg:pl-16 lg:pr-4">
+<div class="mt-10 mx-auto max-w-7xl sm:mt-12 md:mt-16 lg:mt-20 xl:mt-28 md:px-8 lg:pl-16 lg:pr-4">
     <div class="md:grid md:grid-cols-2 flex flex-col h-full bg-cyan-100 dark:bg-cyan-900 sm:text-center lg:text-left lg:my-12 my-4 lg:py-12 py-4 lg:px-4 px-2 rounded-2xl">
-      <div class="lg:pl-16 md:pl-12 pl-8 md:py-8 pb-4 md:text-left gap-y-6 flex flex-col">
+      <div id="contact" class="lg:pl-16 md:pl-12 pl-8 md:py-8 pb-4 md:text-left gap-y-6 flex flex-col">
         <h2 class="text-cyan-600 font-semibold tracking-wide uppercase mt-6 md:mt-0">Contact Information</h2>
         <div class="flex flex-row items-center gap-x-2 lg:text-7xl md:text-5xl text-2xl font-bold">
           Let's Talk! 
